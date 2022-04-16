@@ -25,9 +25,9 @@ public class Main {
             }
         } else {
             ch[v] = 1;
-            DFS(v+1);
+            DFS(v+1); // 포함하는 경우
             ch[v] = 0;
-            DFS(v+1);
+            DFS(v+1); // 포함 안 하는 경우
         }
     }
     public boolean check(List<Integer> l1, List<Integer> l2) {
