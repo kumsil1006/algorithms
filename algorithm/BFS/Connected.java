@@ -10,7 +10,7 @@ class Main {
   
   public void BFS(int v) {
     if(v == n) {
-      
+      return;      
     } else {
       Queue<Integer> q = new LinkedList<>();
       q.add(v);
