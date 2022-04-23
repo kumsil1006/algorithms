@@ -1,9 +1,6 @@
 // 순열&조합 구하기
 import java.util.*;
 
-// 순열&조합 구하기
-import java.util.*;
-
 public class Main {
     static int n, m;
     static int[] combi, permu, ch;
