@@ -4,7 +4,10 @@
 __1. BFS (최단 경로 찾기)__
   > - FindCow.java
 > - FindSis.java
+> - Maze.java
+> - GroupNumber.java
 > - *가는 방법에 따른 자식 노드 찾는 반복문 필요*
+> - 단, Maze.java(미로찾기)의 경우 L 대신 ch로 거리 표현함
 
 ```
 while(!q.isEmpty()) {
