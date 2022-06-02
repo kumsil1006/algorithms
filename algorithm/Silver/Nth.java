@@ -1,4 +1,4 @@
-// 백준 최소 힙
+// 백준 N번째 수
 import java.util.*;
 
 class Main {
