@@ -32,14 +32,11 @@ class Main {
   
   public void BFS() {
     int[][] map2 = new int[n][m];
-    for(int i = 0; i < n; i++) {
-      for(int j =0; j < m; j++) {
-        map2[i][j] = map[i][j];
-      }
-    }
     
-    for(int i =0 ; i < n; i++) {
+    // 배열 복사 및 bfs 준비(2인 애들 큐에 넣어놓기)
+    for(int i = 0; i < n; i++) {
       for(int j = 0; j < m; j++) {
+        map2[i][j] = map[i][j];
         if(map2[i][j] == 2) {
           queue.add(new Pair(i, j));
         }
@@ -62,7 +59,8 @@ class Main {
     }
 
     safe = 0;
-    
+
+    // 안전 구역 넓이 계산
     for(int i =0 ; i < n; i++) {
       for(int j = 0; j < m; j++) {
         if(map2[i][j] == 0) {
@@ -74,11 +72,11 @@ class Main {
     if(max < safe) {
       max = safe;
     }
-    
   }
 
   public void getArea(int cnt) {
     if(cnt == 3) {
+      // 3개 됐을때 BFS로 2와 인접한 구간 2로 만들기
       BFS();
       return;
     }
