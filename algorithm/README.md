@@ -34,6 +34,9 @@ while(!q.isEmpty()) {
 
 ```
 
+__1-2. BFS 응용__
+>- Lab.java: https://www.acmicpc.net/problem/14502 (연구소)
+
 __2. DFS__
 
 __2-1. 부분집합 구하기__
